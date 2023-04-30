@@ -1,0 +1,56 @@
+.table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  border: 1px solid black;
+}
+
+thead tr th {
+  text-align: start;
+}
+
+tbody tr {
+  border-bottom: 1px solid darkgray;
+}
+
+td:not(:last-child) {
+  border-right: 1px solid darkgray;
+}
+
+th:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.divTable {
+  width: 100%;
+  display: flex;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.divTable > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.divTable > div div:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.divTable > div:not(:first-child) div:first-child {
+  border-left: 1px solid black;
+}
+
+.divTable > div div:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid darkgrey;
+}
+
+.divTable > div:not(:last-child) div:not(:first-child) {
+  border-right: 1px solid darkgrey;
+}
+
